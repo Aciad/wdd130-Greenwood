@@ -1,6 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+    --head-font: "Knewave", "Times New Roman";
+    --body-font: "Comic Neue Static", "Times New Roman";
+    --primary-color: ;
+    --secondary-color: ;
+    --accent-color-1: ;
+    --accent-color-2: ;
+}
+
 body {
     margin: 0;
     padding: 0;
+
 }
 .container {
     width: 100%;
@@ -12,15 +25,40 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    height: 175px;
     z-index: 1000;
     background-color: white;
 }
-.card-logo {
-    grid-column: 1 / 2;
+.card-title > h1 {
+    font-family: var(--head-font);
+    font-size: 3.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.card-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-nav > ul {
+    list-style-type: none;
+    text-align: center;
+}
+.li > a {
+    font-family: var(--body-font);
+}
+.li > ul {
     justify-self: left;
 }
+.card-logo {
+    grid-column: 1 / 2;
+}
 #logo {
-    width: 200px;
+    width: 175px;
     height: auto;
 }
 .card-title {
@@ -30,7 +68,7 @@ body {
 }
 .card-nav {
     grid-column: 3 / 4;
-    justify-self: right;
+    justify-self: center;
 }
 .hero {
     top:0;
@@ -66,4 +104,52 @@ body {
 }
 #card-button {
     width: 200px;
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-left > h1 {
+    margin: 0;
+    padding: 0;
+}
+.footer-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+#smlogofacebook, #smlogoinstagram, #smlogotwitter, #smlogoyoutube {
+    width: 16px;
+    height: auto;
+    margin: 4px;
+}
+#smlogofacebook {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 16px;
+    height: 16px;
+}
+#smlogoinstagram {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 16px;
+    height: 16px;
+}
+#smlogotwitter {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 16px;
+    height: 16px;
+}
+#smlogoyoutube {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 16px;
+    height: 16px;
 }
