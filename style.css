@@ -84,11 +84,13 @@ body {
     justify-content: center;
     align-items: center;
     gap: 50px;
+    padding-top: 50px;
 
 }
 .card {
     width: 50%;
-    border: solid black 5px;
+    border: solid black 3px;
+    border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(2 1fr);
     text-align: center;
@@ -147,7 +149,9 @@ body {
 .product-card > .card {
     width: 75%;
 }
-
+footer-left > h1 {
+    font-family: var(--head-font);
+}
 
 #smlogofacebook, #smlogoinstagram, #smlogotwitter, #smlogoyoutube {
     width: 16px;
@@ -177,4 +181,17 @@ body {
     grid-row: 2 / 3;
     width: 16px;
     height: 16px;
+}
+.footer-left h1 {
+    font-family: var(--head-font);
+}
+.footer-center a {
+    font-size: 1.5em;
+}
+.card-nav ul li a {
+    font-family: var(--body-font);
+    font-size: 1.25em;
+}
+a {
+    font-family: var(--body-font);
 }
